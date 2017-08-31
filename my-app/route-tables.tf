@@ -9,10 +9,3 @@ resource "aws_route_table" "javahome_public_rt" {
     Name = "public_rt"
   }
 }
-
-resource "aws_route_table" "default" {
-  vpc_id = "${aws_vpc.javahome_app.id}"
-  tags {
-    Name = "default_rt"
-  }
-}
